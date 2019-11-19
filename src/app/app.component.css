@@ -5,7 +5,7 @@ body{
 	text-align: center;
 }
 .bck_img{
-	background-image: url("imgs/property.jpg");
+	background-image: url("src/assets/property.jpg");
 	background-size: cover;
 	height: 450px;
 }
