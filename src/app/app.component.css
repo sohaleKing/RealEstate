@@ -1,3 +1,34 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #eee;
+	text-align: center;
+}
+.bck_img{
+	background-image: url("imgs/property.jpg");
+	background-size: cover;
+	height: 450px;
+}
+.bck_color{
+	background-color: #eee;
+	margin: 10px 110px 10px 110px;
+}
 div{
-    border:1px solid black;
+	
+}
+.db_padding{
+	
+	padding: 2rem 0rem;
+}
+.img_size{
+	width: 400px;
+	height: 250px;
+}
+.footer_bg{
+	background-color: #2B2B2B;
+	color:white;
+}
+.footer_img{
+	width: 400px;
+	height: 100px;
 }
