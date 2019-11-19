@@ -2,7 +2,7 @@
 	<!--=========HEADER==========-->
 	<div class="row bg-white">
 		<div class="col-4 col-md-3 my-auto"> <!--logo-->
-		<img src="src/assets/logo-realestatel.jpg" alt="logo">
+		<img src="../assets/logo-realestatel.jpg" alt="logo">
 		</div>
 		<div class="col-3 col-md-7 my-auto"><!--navbar-->
 			<nav class="navbar navbar-expand navbar-light d-none d-md-block">
@@ -33,12 +33,12 @@
 					<a class="dropdown-item" href="#">English</a>
 					<a class="dropdown-item" href="#">French</a>
 				</div>
-				<a href="login.html" ><i class="fas fa-user-cog fa-2x text-info"></i></a>
+				<a routerLink="/login" > <fa-icon [icon]="faUserCog"></fa-icon></a>
 			
 			
 				<li class="nav-item dropleft d-inline d-md-none float-right">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-bars fa-2x text-info"></i>
+						<fa-icon [icon]="faBars"></fa-icon>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">My History</a>
@@ -107,7 +107,7 @@
 	<div class="row">
 		<div class="col-12 col-sm-6 col-lg-4 py-4 mx-auto">
 			<div class="card" style="width: 18rem;">
-			  <img src="src/assets/vignette testament.jpg" class="card-img-top" alt="house">
+			  <img src="../assets/vignette testament.jpg" class="card-img-top" alt="house">
 			  <div class="card-body">
 				<p class="card-text">If a deceased person didn’t leave a will, who is the owner of that person’s property?</p>
 			  </div>
@@ -116,7 +116,7 @@
 		</div>
 		<div class="col-12 col-sm-6 col-lg-4 py-4 mx-auto">
 			<div class="card" style="width: 18rem;">
-			  <img src="src/assets/vignettevc.jpg" class="card-img-top" alt="suprise">
+			  <img src="../assets/vignettevc.jpg" class="card-img-top" alt="suprise">
 			  <div class="card-body">
 				<p class="card-text">During the buying or selling process, a hidden defect is always a bad surprise.</p>
 			  </div>
@@ -125,7 +125,7 @@
 		</div>
 		<div class="col-12 col-sm-6 col-lg-4 py-4 mx-auto">
 			<div class="card" style="width: 18rem;">
-			  <img src="src/assets/vignette.jpg" class="card-img-top" alt="kitchen">
+			  <img src="../assets/vignette.jpg" class="card-img-top" alt="kitchen">
 			  <div class="card-body">
 				<p class="card-text">Modernizing your kitchen to sell your home or just to make it more up-to-date can be a lot easier</p>
 			  </div>
@@ -154,19 +154,19 @@
         <div class="card-body">        
            <div class="tab-content mt-3">
             <div class="tab-pane active" id="description" role="tabpanel">
-			  <img src="src/assets/property1.jpg" class="img_size" alt="all property">
+			  <img src="../assets/property1.jpg" class="img_size" alt="all property">
               <p class="card-text py-2">Houses, condos, land, country homes, apartments... The Centris.ca website contains the largest number of homes for sale and for rent in Québec. </p>
                <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
             </div>
              
             <div class="tab-pane" id="history" role="tabpanel" aria-labelledby="history-tab">  
-              <img src="src/assets/agent1.jpg" class="img_size" alt="all agents">
+              <img src="../assets/agent1.jpg" class="img_size" alt="all agents">
 			  <p class="card-text py-2">When buying and selling, count on the strength of a network composed of all Québec real estate agencies on Centris.ca</p>
                <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
             </div>
              
             <div class="tab-pane" id="deals" role="tabpanel" aria-labelledby="deals-tab">
-				<img src="src/assets/broker1.jpg" class="img_size" alt="all brokers">
+				<img src="../assets/broker1.jpg" class="img_size" alt="all brokers">
               <p class="card-text py-2">Find the real estate broker who will guide you in your transaction. Search by areas served or even languages spoken.</p>
               <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
             </div>
@@ -176,6 +176,28 @@
     </div>
   </div>
 </div>
+
+<ngb-tabset>
+  <ngb-tab title="Simple">
+    <ng-template ngbTabContent>
+      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+      master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+      dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+      iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+      <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+      craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+      cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+      yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
+      shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+      sint qui sapiente accusamus tattooed echo park.</p>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
 	<!--=========COURSOL==========-->
 	<div class="row">
 		<div class="col">
@@ -191,16 +213,16 @@
 	<!--=========FOOTER==========-->
 	<div class="row footer_bg py-2">
 		<div class="col-12 col-md-6">
-		<img src="src/assets/footer.jpg" alt="logo" class="footer_img">
+		<img src="../../assets/footer.jpg" alt="logo" class="footer_img">
 		</div>
 		<div class="col-12 col-md-3">
-		<P class="h5 mt-4">Angular Project</p>
+		<p class="h5 mt-4">Angular Project</p>
 		<p><small>Fall 2019</small></p>
 		</div>
 		<div class="col-12 col-md-3">
-		<P class="h5">Nadhir Khayati</p>
-		<P class="h6">Krisha Gopal</p>
-		<P class="h6">Soheyl Rahgozar</p>
+		<p class="h5">Nadhir Khayati</p>
+		<p class="h6">Krisha Gopal</p>
+		<p class="h6">Soheyl Rahgozar</p>
 		</div>
 	</div>
  </div>

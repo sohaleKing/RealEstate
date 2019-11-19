@@ -2,7 +2,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background-color: #eee;
-	text-align: center;
+	text-align: center!important;
 }
 .bck_img{
 	background-image: url("src/assets/property.jpg");

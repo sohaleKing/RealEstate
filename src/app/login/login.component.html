@@ -1,1 +1,95 @@
-<p>login works!</p>
+<div class="container-fluid bg-light">
+	<!--=========HEADER==========-->
+	<div class="row bg-white">
+		<div class="col-4 col-md-3 my-auto"> <!--logo-->
+		<img src="imgs/logo-realestatel.jpg" alt="logo">
+		</div>
+		<div class="col-3 col-md-7 my-auto"><!--navbar-->
+			<nav class="navbar navbar-expand navbar-light d-none d-md-block">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto font-weight-bold">
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="#">BUY</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="#">SELL</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="#">BROKER</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-secondary" href="#">TOOLS</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="col-5 col-md-2 my-auto text-md-right pr-2"><!--login-->
+			<div class="dropdown float-right">
+				<a class="dropdown-toggle font-weight-bold text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					En
+				</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink float-right">
+					<a class="dropdown-item" href="#">English</a>
+					<a class="dropdown-item" href="#">French</a>
+				</div>
+				<a href="login.html" ><i class="fas fa-user-cog fa-2x text-info"></i></a>
+			
+			
+				<li class="nav-item dropleft d-inline d-md-none float-right">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-bars fa-2x text-info"></i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">My History</a>
+						<a class="dropdown-item" href="#">My Favorites</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Logout</a>
+					</div>
+				</li>
+			
+			</div>	
+		</div>
+	</div>
+	<!--=========login Area==========-->
+	 <div class="container bg-light py-5">
+		
+			<div class="login-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+        <h2 class="text-center">Sign In</h2>   
+        <div class="form-group">
+        	<div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Username" required="required">
+            </div>
+        </div>
+		<div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+        </div>        
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>       
+    </form>
+    <p class="text-center small">Don't have an account! <a href="registration">Sign up here</a>.</p>
+</div>
+	
+	</div>
+	<!--=========FOOTER==========-->
+	<div class="row footer_bg py-2">
+		<div class="col-12 col-md-6">
+		<img src="imgs/footer.jpg" alt="logo" class="footer_img">
+		</div>
+		<div class="col-12 col-md-3">
+		<p class="h5 mt-4">Angular Project</p>
+		<p><small>Fall 2019</small></p>
+		</div>
+		<div class="col-12 col-md-3">
+		<p class="h5">Nadhir Khayati</p>
+		<p class="h6">Krisha Gopal</p>
+		<p class="h6">Soheyl Rahgozar</p>
+		</div>
+	</div>
+ </div>
