@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faUserCog, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +7,6 @@ import { faUserCog, faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'RealEstate';
-  faUserCog = faUserCog;
-  faBars = faBars;
+ 
+
 }

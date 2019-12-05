@@ -1,0 +1,71 @@
+<div class="row center">
+    <div class="container bg-light center">
+
+ <!--=========HEADER==========-->
+     <app-navbar></app-navbar>
+    <div>Hello</div>
+<!--=========Login==========-->
+<div class="row">
+    <div class="col-5 mx-auto">
+        <div class="container bg-light py-5">
+            <div class="register-form">
+                <form>
+                    <img class="rounded mx-auto d-block" src="assets/imgs/register-icon.png" alt="" width="72" height="72" >
+                    <h2 class="text-center">Register</h2>
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <input type="text" class="form-control mr-1" placeholder="First Name" required="required">
+                           
+                            <input type="text" class="form-control ml-1" placeholder="Last Name" required="required">
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                           
+                            <input type="email" class="form-control" placeholder="Email" required="required">
+                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                         
+                            <input type="password" class="form-control" placeholder="Password" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                         <div class="form-group col-md-5">
+                            <input type="text" class="form-control" id="inputCity" placeholder="city">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <select id="inputState" class="form-control">
+                                <option selected>Province</option>
+                                <option>ON</option>
+                                <option>QC</option>
+                                <option>BC</option>
+                                <option>AB</option>
+                                <option>NS</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="inputZip" placeholder="zip">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg mx-auto d-block">register</button>
+                    </div>       
+                </form>
+                <p class="text-center small">Already have an account? <a routerLink="../register">Login</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

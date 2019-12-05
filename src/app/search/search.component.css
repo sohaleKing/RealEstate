@@ -1,0 +1,9 @@
+.bck_img{
+	background-image: url("src/assets/imgs/property.jpg");
+	background-size: cover;
+	height: 450px;
+}
+.bck_color{
+	background-color: #eee;
+	margin: 10px 110px 10px 110px;
+}

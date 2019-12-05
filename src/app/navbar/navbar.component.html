@@ -1,4 +1,41 @@
-<div class="col">
-    this is the navbar component
-with the new content as a component
-  </div>
+<div class="row bg-white">
+<div class="col-4 col-md-3 my-auto"> <!--logo-->
+		<img src="assets/imgs/logo-realestatel.jpg" alt="logo">
+</div>
+<div class="col-3 col-md-7 my-auto"><!--navbar-->
+	<nav class="navbar navbar-expand navbar-light d-none d-md-block">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto font-weight-bold">
+				<li class="nav-item">
+					<a class="nav-link text-secondary" href="#">BUY</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-secondary" href="#">SELL</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-secondary" href="#">BROKER</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-secondary" href="#">TOOLS</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="col-5 col-md-2 my-auto text-md-right pr-2"><!--login-->
+	<div class="dropdown float-right">		
+		<li class="nav-item dropleft d-inline d-md-none float-left">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<fa-icon [icon]="faBars" class="text-secondary" size="2x"></fa-icon>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">My History</a>
+				<a class="dropdown-item" href="#">My Favorites</a>
+				<div class="dropdown-divider"></div>
+				    <a class="dropdown-item" href="#">Logout</a>
+				</div>
+		</li>
+		<a routerLink="../login" ><fa-icon [icon]="faUserCog" class="text-secondary px-2 align-middle"  size="2x"></fa-icon></a>
+	</div>		
+</div>
+</div>
