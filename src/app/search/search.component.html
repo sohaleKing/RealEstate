@@ -2,34 +2,34 @@
 		<div class="col my-5 py-2">
 			<p class="h1 text-light font-weight-bold">Where Dreams Come Home</p> 
 			<div class="bck_color">
-				<form class="form-inline my-2 my-lg-0 py-4 px-4">
+				<form class="form-inline my-2 my-lg-0 py-4 px-4" (submit)="search()">
 				  <input class="col-9 form-control" type="search" placeholder="Search by City, Neighbourhood, Region, Address or Postal Code" aria-label="Search">
 				  <button class="col-3 btn btn-info text-light" type="submit">Search <i class="fas fa-search text-light"></i></button>
 				<input type="range" class="custom-range pt-4" min="50000" max="2000000" step="0.1" id="customRange3">
 				</form>
 				<div class="row pb-3">
 						<div class="col-md-2 col-sm-4 col-6 custom-control custom-switch">
-						  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch1" #buy>
 						  <label class="custom-control-label" for="customSwitch1">Buy</label>
 						</div>
 						<div class="col-md-2 col-sm-4 col-6 custom-control custom-switch">
-						  <input type="checkbox" class="custom-control-input" id="customSwitch2">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch2" #sell>
 						  <label class="custom-control-label" for="customSwitch2">Sell</label>
 						</div>
 						<div class="col-md-2 col-sm-4 col-6 custom-control custom-switch">
-						  <input type="checkbox" class="custom-control-input" id="customSwitch3">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch3" #rent>
 						  <label class="custom-control-label" for="customSwitch3">rent</label>
 						</div>
 						<div class="col-md-2 col-sm-4 col-6 custom-control custom-switch">
-						  <input type="checkbox" class="custom-control-input" id="customSwitch4">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch4" #lot>
 						  <label class="custom-control-label" for="customSwitch4">lot</label>
 						</div>
 						<div class="col-md-2 col-sm-4 col-6 custom-control custom-switch">
-						  <input type="checkbox" class="custom-control-input" id="customSwitch5">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch5" #house>
 						  <label class="custom-control-label" for="customSwitch5">House</label>
 						</div>
 						<div class="col-md-2 col-sm-4 col-6 custom-control custom-switch">
-						  <input type="checkbox" class="custom-control-input" id="customSwitch6">
+						  <input type="checkbox" class="custom-control-input" id="customSwitch6" #condo>
 						  <label class="custom-control-label" for="customSwitch6">Condo</label>
 						</div>
 				</div>

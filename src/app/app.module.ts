@@ -16,6 +16,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FooterComponent } from './footer/footer.component';
 import { DatabaseComponent } from './database/database.component';
 import { CartsComponent } from './carts/carts.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { ExpertTipsComponent } from './expert-tips/expert-tips.component';
 
 
 
@@ -23,7 +25,11 @@ const appRoutes: Routes = [                       //you have to add this array f
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'home', component: ContentComponent },
+  { path: 'tips', component: ExpertTipsComponent },
+  { path: 'home', component: ContentComponent, children : [
+    { path: '', component: DatabaseComponent },
+    { path: 'newsletter', component: NewsletterComponent },
+  ] },
 
 
   { path: '**', component: PageNotFoundComponent }
@@ -44,6 +50,8 @@ const appRoutes: Routes = [                       //you have to add this array f
   FooterComponent,
   DatabaseComponent,
   CartsComponent,
+  NewsletterComponent,
+  ExpertTipsComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ connectedUser = {
     state: '',
     city: '',
     zip: '' }
+    
 @ViewChild('f') loginForm : NgForm;
 @ViewChild('password') password: ElementRef;
 
