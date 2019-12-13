@@ -23,12 +23,14 @@ export class SearchComponent implements OnInit {
   }
 
   search(){
+console.log("these are selected search items as below:");  
 console.log(this.buy.nativeElement.checked);        //just ready here to use
 console.log(this.sell.nativeElement.checked);
 console.log(this.rent.nativeElement.checked);
 console.log(this.lot.nativeElement.checked);
 console.log(this.house.nativeElement.checked);
 console.log(this.condo.nativeElement.checked);
+alert("Check the inspect to see the console log")
 
   }
 

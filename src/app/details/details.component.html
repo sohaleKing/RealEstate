@@ -1,0 +1,12 @@
+<div class="row">
+        <div class="card" (click)="infos()" >
+         <img src="assets/imgs/broker.jpg" class="card-img-top broker_pic" alt="broker">
+         <div class="card-body">
+           <small class="card-text text-success">{{ brokers.id }}</small>
+           <h5 class="card-title">{{ brokers.name }}</h5>
+           <p class="card-text">{{ brokers.contact }}</p>
+           <p class="card-text">{{ brokers.description }}</p>
+           <button class="btn btn-primary" [disabled]="btnStatus" [routerLink]="['/details', brokers.id]" >{{ btnText }}</button>
+          </div>
+       </div>
+</div>

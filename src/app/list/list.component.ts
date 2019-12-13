@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BrokersService } from '../services/brokers.service';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+brokers;
+  constructor(private brokList : BrokersService) { }
 
   ngOnInit() {
+    this.brokers = this.brokList.brokers;
   }
 
 }

@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';              //when you 
 import { NgModule } from '@angular/core'; 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';   //when you use TD form you need to add this
 
+import { BrokersService } from './services/brokers.service';        //adding a service injection
+
 import { AppComponent } from './app.component';                     //by adding any component will add here and also insde the @NgModule
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,6 +20,8 @@ import { DatabaseComponent } from './database/database.component';
 import { CartsComponent } from './carts/carts.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ExpertTipsComponent } from './expert-tips/expert-tips.component';
+import { DetailsComponent } from './details/details.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 
@@ -30,7 +34,8 @@ const appRoutes: Routes = [                       //you have to add this array f
     { path: '', component: DatabaseComponent },
     { path: 'newsletter', component: NewsletterComponent },
   ] },
-
+  { path: 'list', component: ListComponent},
+  { path : 'details/:id', component : BookingComponent},
 
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -52,7 +57,10 @@ const appRoutes: Routes = [                       //you have to add this array f
   CartsComponent,
   NewsletterComponent,
   ExpertTipsComponent,
+  DetailsComponent,
+  BookingComponent,
   ],
+  
   imports: [
     BrowserModule,
     FontAwesomeModule,                                      // we have to add after importing line 3 {FontAwesomeModule}
@@ -61,7 +69,7 @@ const appRoutes: Routes = [                       //you have to add this array f
     FormsModule,                                           //when you use TD forms
     ReactiveFormsModule,                                   //when you use TD forms
   ],
-  providers: [],
+  providers: [ BrokersService],
   bootstrap: [AppComponent]                                
 })
 export class AppModule { }                                 
