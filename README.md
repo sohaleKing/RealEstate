@@ -8,4 +8,4 @@ Soheyl's part:
 
 
 krisha part:
-buy /sell --> in fact the same as brokers list but with the house informations
+buy /sell --> he was supposed to do the buy/sell link. the same concept as the broker list but not yet
