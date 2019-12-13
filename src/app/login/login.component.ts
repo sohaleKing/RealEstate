@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'; 
+import { Component, OnInit, } from '@angular/core';
+import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';        //when you use your template driven form you need to add this
 
 @Component({
   selector: 'app-login',

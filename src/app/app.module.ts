@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; //npm install @fortawesome/fontawesome-svg-core $ npm install @fortawesome/free-solid-svg-icons # See Compatibility table below to choose a correct version $ npm install @fortawesome/angular-fontawesome@<version>
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';              //npm install --save @ng-bootstrap/ng-bootstrap --> you need to import this and also inside the imports-->this would be apply for tabset and courasol boostraps
 import { RouterModule, Routes } from '@angular/router';              //when you have routing in your page
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';   //when you use TD form you need to add this
 
 import { AppComponent } from './app.component';                     //by adding any component will add here and also insde the @NgModule
 import { LoginComponent } from './login/login.component';
@@ -39,7 +39,9 @@ const appRoutes: Routes = [                       //you have to add this array f
     BrowserModule,
     FontAwesomeModule,                                      // we have to add after importing line 3 {FontAwesomeModule}
     NgbModule,                                              // we have to add after importing line 4 @ng-bootstrap/ng-bootstrap
-    RouterModule.forRoot(appRoutes, )                       //you adding this import with the line 5 @angular/router
+    RouterModule.forRoot(appRoutes),                       //you adding this import with the line 5 @angular/router
+    FormsModule,                                           //when you use TD forms
+    ReactiveFormsModule,                                   //when you use TD forms
   ],
   providers: [],
   bootstrap: [AppComponent]                                
