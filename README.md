@@ -15,4 +15,4 @@ Soheyl's part:
 =====================================================================================
 -------------------------------------------------------------------------------------
 krisha part:
-buy /sell --> he was supposed to do the read more link (database component) just a simple text compoent with no service and directives and injection just a simple text component . **** but no even any contact to me! I had to do everything A-Z alone!!! not fare
+buy /sell --> he was supposed to do the read more link (database component) just a simple text compoent with no service and directives and injection just a simple text component . **** but not even any contact!***
