@@ -7,12 +7,12 @@ import { Component, OnInit,  ViewChild, ElementRef } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-@ViewChild('buy') buy: ElementRef;
-@ViewChild('sell') sell: ElementRef;
-@ViewChild('rent') rent: ElementRef;
-@ViewChild('lot') lot: ElementRef;
-@ViewChild('house') house: ElementRef;
-@ViewChild('condo') condo: ElementRef;
+@ViewChild('buy' , {static: false}) buy: ElementRef;
+@ViewChild('sell' , {static: false}) sell: ElementRef;
+@ViewChild('rent', {static: false}) rent: ElementRef;
+@ViewChild('lot', {static: false}) lot: ElementRef;
+@ViewChild('house', {static: false}) house: ElementRef;
+@ViewChild('condo', {static: false}) condo: ElementRef;
 
 
 

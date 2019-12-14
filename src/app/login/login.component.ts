@@ -20,8 +20,8 @@ connectedUser = {
     city: '',
     zip: '' }
     
-@ViewChild('f') loginForm : NgForm;
-@ViewChild('password') password: ElementRef;
+@ViewChild('f' , {static: false}) loginForm : NgForm;
+@ViewChild('password' , {static: false}) password: ElementRef;
 
 
   constructor(private router: Router) { }
