@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';   //when you use TD form you need to add this
 
 import { BrokersService } from './services/brokers.service';        //adding a service injection
+import { HousesService } from './services/houses.service';
 
 import { AppComponent } from './app.component';                     //by adding any component will add here and also insde the @NgModule
 import { LoginComponent } from './login/login.component';
@@ -22,6 +23,10 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ExpertTipsComponent } from './expert-tips/expert-tips.component';
 import { DetailsComponent } from './details/details.component';
 import { BookingComponent } from './booking/booking.component';
+import { BuyComponent } from './buy/buy.component';
+import { SellComponent } from './sell/sell.component';
+import { DealsComponent } from './deals/deals.component';
+import { VisitComponent } from './visit/visit.component';
 
 
 
@@ -36,6 +41,10 @@ const appRoutes: Routes = [                       //you have to add this array f
   ] },
   { path: 'list', component: ListComponent},
   { path : 'details/:id', component : BookingComponent},
+  { path: 'buy', component: BuyComponent},
+  { path: 'sell', component: SellComponent},
+   { path: 'deals', component: DealsComponent},
+   { path: 'deals/:ListingId', component: VisitComponent},
 
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -59,6 +68,10 @@ const appRoutes: Routes = [                       //you have to add this array f
   ExpertTipsComponent,
   DetailsComponent,
   BookingComponent,
+  BuyComponent,
+  SellComponent,
+  DealsComponent,
+  VisitComponent,
   ],
   
   imports: [
@@ -69,7 +82,9 @@ const appRoutes: Routes = [                       //you have to add this array f
     FormsModule,                                           //when you use TD forms
     ReactiveFormsModule,                                   //when you use TD forms
   ],
-  providers: [ BrokersService],
+  providers: [ BrokersService,
+  HousesService,
+  ],
   bootstrap: [AppComponent]                                
 })
 export class AppModule { }                                 

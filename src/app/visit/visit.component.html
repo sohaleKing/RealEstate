@@ -5,14 +5,14 @@
       <app-navbar></app-navbar>
             <div class="row">
             <div class="col-6 mt-2 mb-2 d-block mx-auto">
-            <button class="btn btn-info float-left ml-5 mt-5" [disabled]="prevDisabled" [routerLink]="['/details', prevId]">Prev</button>
-            <button class="btn btn-info float-right ml-5 mt-5" [disabled]="nextDisabled" [routerLink]="['/details', nextId]">Next</button>
+            <button class="btn btn-info float-left ml-5 mt-5" [disabled]="prevDisabled" [routerLink]="['/deals', prevId]">Prev</button>
+            <button class="btn btn-info float-right ml-5 mt-5" [disabled]="nextDisabled" [routerLink]="['/deals', nextId]">Next</button>
             </div>
         <div class="col-12 mt-2 mb-2">
-        <img src="assets/imgs/broker.jpg" width="200" height="200" class="d-block mx-auto" alt="image">
+        <img src="assets/imgs/house.jpg" width="200" height="200" class="d-block mx-auto" alt="house">
         
         <div class="col-12 text-center d-block mx-auto h3">
-        {{ name }}
+        {{ address }}
         </div>
         <div class="col-12 text-center d-block mx-auto h5">
         {{ description }}
@@ -20,8 +20,8 @@
         
         <div class="col-12 text-center d-block mx-auto mb-3">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">contact: 
-            <span class="badge badge-pill badge-danger">{{ contact }}</span>
+            <li class="list-group-item">price: 
+            <span class="badge badge-pill badge-success">{{ price }}</span>
         </ul>
         </div>
         </div>
